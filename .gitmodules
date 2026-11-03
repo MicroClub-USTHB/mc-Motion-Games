@@ -1,0 +1,6 @@
+[submodule "submodules/mario-cam-kart"]
+	path = submodules/mario-cam-kart
+	url = https://github.com/MicroClub-USTHB/mario-cam-kart.git
+[submodule "submodules/jutsu-hand-signs"]
+	path = submodules/jutsu-hand-signs
+	url = https://github.com/MicroClub-USTHB/JutsuHandSigns.git
