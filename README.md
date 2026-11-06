@@ -23,11 +23,19 @@ A Naruto-inspired webcam game: choose your ninja and perform hand-sign sequences
 
 [submodules/jutsu-hand-signs](submodules/jutsu-hand-signs)
 
+### 🏒 Hockey-AR - Air Hockey Webcam Game
+A high-performance, zero-allocation browser AR air hockey engine controlled entirely via webcam hand tracking!  
+- Landmark 9 single-point anchoring and One Euro filtering  
+- Sub-frame interpolation and anti-tunneling physics sub-stepping  
+- Instant gesture lock and smooth match transition sequence  
+- Solo mode and local multiplayer support  
+
+[submodules/hockey-ar](submodules/hockey-ar)
+
 ## Technology Stack
-- **OpenCV** - Computer vision and particle effects
-- **MediaPipe** - Hand tracking and gesture recognition
-- **Python** - Main application logic
-- **melonDS** - Nintendo DS emulator fork
+- **OpenCV & MediaPipe** - Computer vision, hand tracking, and gesture recognition
+- **Python** - Main application logic for Python-based games
+- **Vanilla JavaScript & HTML5 Canvas** - Pure browser-native runtime for Hockey-AR
 
 ## Installation
 ```bash
@@ -37,30 +45,10 @@ git submodule update --init --recursive
 # Install dependencies
 pip install -r requirements.txt
 
-# Run the main game or individual submodules
+# Run Python-based games (Mario Kart or Jutsu Hand Signs)
 cd submodules/mario-cam-kart && python main.py
 # or
 cd submodules/jutsu-hand-signs && python main.py
-```
 
-## Usage
-### Mario Kart DS
-1. Open your hand near the camera - tracker locks on
-2. Move hand left/right to steer
-3. Use phone or keyboard for acceleration/braking
-4. Race in local multiplayer!
-
-### Jutsu Hand Signs
-1. Select your ninja character
-2. Perform the hand-sign sequence shown
-3. Complete the pattern to unleash your Jutsu!
-4. Watch Rasengan or Chidori erupt on screen!
-
-## License
-See LICENSE file for details.
-
-## Acknowledgements
-- [melonDS](https://github.com/melonDS-emu/melonDS) - Nintendo DS emulator
-- [MediaPipe](https://mediapipe.dev/) - Hand tracking solution
-- [OpenCV](https://opencv.org/) - Computer vision library
-- Naruto anime series - Inspiration for Jutsu techniques
+# Run Hockey-AR (Static browser deployment or local server)
+cd submodules/hockey-ar && python -m http.server 8000
