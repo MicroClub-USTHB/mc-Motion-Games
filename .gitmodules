@@ -4,3 +4,6 @@
 [submodule "submodules/jutsu-hand-signs"]
 	path = submodules/jutsu-hand-signs
 	url = https://github.com/MicroClub-USTHB/JutsuHandSigns.git
+[submodule "submodules/hockey-ar"]
+	path = submodules/hockey-ar
+	url = https://github.com/leash06/ar-hockey
