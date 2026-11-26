@@ -23,7 +23,7 @@ No controllers, no setup for the player: walk up, stand in front of the camera, 
 
 <table>
 <tr>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 
 ### Mario Kart DS, webcam edition
 
@@ -37,7 +37,7 @@ Play Mario Kart DS with your hands or your phone.
 **[Open the repo](https://github.com/MicroClub-USTHB/mario-cam-kart)** · `submodules/mario-cam-kart`
 
 </td>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 
 ### Jutsu Hand Signs, Naruto webcam game
 
@@ -49,6 +49,20 @@ Choose your ninja and form the hand seals.
 - 1v1 duel in 3D with Three.js
 
 **[Open the repo](https://github.com/MicroClub-USTHB/JutsuHandSigns)** · `submodules/jutsu-hand-signs`
+
+</td>
+<td width="33%" valign="top">
+
+### FingerShooter, finger-gun gallery
+
+Aim with your index finger, fire by snapping your thumb.
+
+- Matrix-style 3D shooting gallery in the browser
+- Hand tracking runs fully in-browser, nothing uploaded
+- Combo multiplier, 60-second rounds
+- Mouse fallback if the camera is blocked
+
+**[Open the repo](https://github.com/MicroClub-USTHB/FingerShooter)** · [Play live](https://fingershooter.netlify.app/) · `submodules/fingershooter`
 
 </td>
 </tr>
@@ -67,6 +81,9 @@ Each game has its own README with install steps and requirements. Quick start:
 # Jutsu Hand Signs
 cd submodules/jutsu-hand-signs && pip install -r requirements.txt && python main.py
 
+# FingerShooter (runs in the browser)
+cd submodules/fingershooter && npm install && npm run dev
+
 # Mario Kart DS (needs your own legally dumped ROM, see its README)
 cd submodules/mario-cam-kart && ./play.sh      # play.bat on Windows
 ```
@@ -77,6 +94,7 @@ cd submodules/mario-cam-kart && ./play.sh      # play.bat on Windows
 | --- | --- |
 | **Mario Kart DS** | Show both hands to the camera and grab an imaginary wheel. Tilt to steer, fist to accelerate, open palm to brake, thumb out for an item. Or scan the QR code and drive from your phone. |
 | **Jutsu Hand Signs** | Pick a ninja and difficulty. Form each seal shown on screen and hold it. Finish the sequence and your jutsu erupts on your hand. |
+| **FingerShooter** | Allow the camera, hold the aim pose until calibration fills. Point your index finger to aim, cock and snap your thumb to fire. Avoid the firewall viruses. |
 
 ## Built with
 
@@ -85,6 +103,7 @@ cd submodules/mario-cam-kart && ./play.sh      # play.bat on Windows
 | **OpenCV** | camera capture and the particle effects |
 | **MediaPipe** | hand tracking and gesture recognition |
 | **Python** | game logic |
+| **Three.js** | the 3D scene of FingerShooter and the Jutsu duel |
 | **melonDS** | the Nintendo DS emulator the kart game is forked from |
 
 ## License and legal
