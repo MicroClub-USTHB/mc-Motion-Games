@@ -1,66 +1,98 @@
-# mc-Motion-Games
-4 interactive camera-detection games for university open days
+<p align="center">
+  <img src="./assets/banner.svg" alt="mc-Motion-Games by Micro Club" width="1000" />
+</p>
 
-## Overview
-Control gameplay with hand gestures, body movements, and facial expressions using OpenCV and MediaPipe. Perfect for university open days and events - no controllers needed, just stand and play!
+<p align="center">
+  <a href="https://github.com/MicroClub-USTHB/mc-Motion-Games/stargazers"><img src="https://img.shields.io/github/stars/MicroClub-USTHB/mc-Motion-Games?style=flat&labelColor=0b0b10" alt="stars" /></a>
+  <a href="https://github.com/MicroClub-USTHB/mc-Motion-Games/issues"><img src="https://img.shields.io/github/issues/MicroClub-USTHB/mc-Motion-Games?labelColor=0b0b10" alt="issues" /></a>
+  <a href="https://github.com/MicroClub-USTHB/mc-Motion-Games/commits/main"><img src="https://img.shields.io/github/last-commit/MicroClub-USTHB/mc-Motion-Games?labelColor=0b0b10" alt="last commit" /></a>
+  <a href="https://github.com/MicroClub-USTHB"><img src="https://img.shields.io/badge/by-Micro%20Club%20USTHB-0b0b10?style=flat" alt="Micro Club USTHB" /></a>
+</p>
 
-## Games Included
-### 🎮 Mario Kart DS - Webcam Edition
-Play Mario Kart DS with your hands or phone!  
-- Webcam gesture steering  
-- 4-player local multiplayer  
-- Phone touch controller  
-- Based on melonDS fork  
+<p align="center"><a href="#the-games">Games</a> · <a href="#run-them">Run them</a> · <a href="#how-to-play">How to play</a> · <a href="#built-with">Built with</a></p>
 
-[submodules/mario-cam-kart](submodules/mario-cam-kart)
+---
 
-### 🌀 Jutsu Hand Signs - Naruto Webcam Game
-A Naruto-inspired webcam game: choose your ninja and perform hand-sign sequences tracked with MediaPipe!  
-- Two powerful Jutsu: Rasengan and Chidori  
-- Hand gesture recognition  
-- Difficulty levels  
-- Naruto characters  
+## Motion Games
 
-[submodules/jutsu-hand-signs](submodules/jutsu-hand-signs)
+Interactive camera-detection games for university open days. Control the game with
+hand gestures, body movements and facial expressions using OpenCV and MediaPipe.
+No controllers, no setup for the player: walk up, stand in front of the camera, play.
 
-## Technology Stack
-- **OpenCV** - Computer vision and particle effects
-- **MediaPipe** - Hand tracking and gesture recognition
-- **Python** - Main application logic
-- **melonDS** - Nintendo DS emulator fork
+## The games
 
-## Installation
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### Mario Kart DS, webcam edition
+
+Play Mario Kart DS with your hands or your phone.
+
+- Webcam gesture steering
+- Phone touch controller (wheel, buttons or gyroscope)
+- Up to 4-player local multiplayer, one window
+- A melonDS fork
+
+**[Open the repo](https://github.com/MicroClub-USTHB/mario-cam-kart)** · `submodules/mario-cam-kart`
+
+</td>
+<td width="50%" valign="top">
+
+### Jutsu Hand Signs, Naruto webcam game
+
+Choose your ninja and form the hand seals.
+
+- Rasengan and Chidori, drawn live on your hand
+- Rule-based hand-sign recognition
+- Easy, Medium and Hard
+- 1v1 duel in 3D with Three.js
+
+**[Open the repo](https://github.com/MicroClub-USTHB/JutsuHandSigns)** · `submodules/jutsu-hand-signs`
+
+</td>
+</tr>
+</table>
+
+## Run them
+
 ```bash
-# Initialize submodules
-git submodule update --init --recursive
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the main game or individual submodules
-cd submodules/mario-cam-kart && python main.py
-# or
-cd submodules/jutsu-hand-signs && python main.py
+git clone --recurse-submodules https://github.com/MicroClub-USTHB/mc-Motion-Games.git
+cd mc-Motion-Games      # already cloned? git submodule update --init --recursive
 ```
 
-## Usage
-### Mario Kart DS
-1. Open your hand near the camera - tracker locks on
-2. Move hand left/right to steer
-3. Use phone or keyboard for acceleration/braking
-4. Race in local multiplayer!
+Each game has its own README with install steps and requirements. Quick start:
 
-### Jutsu Hand Signs
-1. Select your ninja character
-2. Perform the hand-sign sequence shown
-3. Complete the pattern to unleash your Jutsu!
-4. Watch Rasengan or Chidori erupt on screen!
+```bash
+# Jutsu Hand Signs
+cd submodules/jutsu-hand-signs && pip install -r requirements.txt && python main.py
 
-## License
-See LICENSE file for details.
+# Mario Kart DS (needs your own legally dumped ROM, see its README)
+cd submodules/mario-cam-kart && ./play.sh      # play.bat on Windows
+```
+
+## How to play
+
+| Game | Steps |
+| --- | --- |
+| **Mario Kart DS** | Show both hands to the camera and grab an imaginary wheel. Tilt to steer, fist to accelerate, open palm to brake, thumb out for an item. Or scan the QR code and drive from your phone. |
+| **Jutsu Hand Signs** | Pick a ninja and difficulty. Form each seal shown on screen and hold it. Finish the sequence and your jutsu erupts on your hand. |
+
+## Built with
+
+| | |
+| --- | --- |
+| **OpenCV** | camera capture and the particle effects |
+| **MediaPipe** | hand tracking and gesture recognition |
+| **Python** | game logic |
+| **melonDS** | the Nintendo DS emulator the kart game is forked from |
+
+## License and legal
+
+Each game carries its own license, see its repository. Mario Kart DS is an independent fan
+project, not affiliated with Nintendo; only play games you own. The Jutsu game is a fan project
+inspired by Naruto.
 
 ## Acknowledgements
-- [melonDS](https://github.com/melonDS-emu/melonDS) - Nintendo DS emulator
-- [MediaPipe](https://mediapipe.dev/) - Hand tracking solution
-- [OpenCV](https://opencv.org/) - Computer vision library
-- Naruto anime series - Inspiration for Jutsu techniques
+
+[melonDS](https://github.com/melonDS-emu/melonDS) · [MediaPipe](https://mediapipe.dev/) · [OpenCV](https://opencv.org/)
