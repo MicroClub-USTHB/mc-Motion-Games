@@ -13,6 +13,12 @@
 
 ---
 
+<p align="center">
+  <img src="./assets/showcase.jpg" alt="Mario Kart DS, Jutsu Hand Signs and FingerShooter running" width="1000" />
+</p>
+
+<p align="center"><sub>Real captures: Mario Kart DS (DS64), the Jutsu duel and Rasengan intro, FingerShooter.</sub></p>
+
 ## Motion Games
 
 Interactive camera-detection games for university open days. Control the game with
