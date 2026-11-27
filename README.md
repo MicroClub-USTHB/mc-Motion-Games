@@ -14,10 +14,10 @@
 ---
 
 <p align="center">
-  <img src="./assets/showcase.jpg" alt="Mario Kart DS, Jutsu Hand Signs and FingerShooter running" width="1000" />
+  <img src="./assets/showcase.jpg" alt="Mario Kart DS, Jutsu Hand Signs, FingerShooter and HOCKEY-AR running" width="1000" />
 </p>
 
-<p align="center"><sub>Real captures: Mario Kart DS (DS64), the Jutsu duel and Rasengan intro, FingerShooter.</sub></p>
+<p align="center"><sub>Real captures: Mario Kart DS (DS64), the Jutsu duel, FingerShooter and HOCKEY-AR.</sub></p>
 
 ## Motion Games
 
@@ -29,7 +29,7 @@ No controllers, no setup for the player: walk up, stand in front of the camera, 
 
 <table>
 <tr>
-<td width="33%" valign="top">
+<td width="50%" valign="top">
 
 ### Mario Kart DS, webcam edition
 
@@ -43,7 +43,7 @@ Play Mario Kart DS with your hands or your phone.
 **[Open the repo](https://github.com/MicroClub-USTHB/mario-cam-kart)** · `submodules/mario-cam-kart`
 
 </td>
-<td width="33%" valign="top">
+<td width="50%" valign="top">
 
 ### Jutsu Hand Signs, Naruto webcam game
 
@@ -57,7 +57,9 @@ Choose your ninja and form the hand seals.
 **[Open the repo](https://github.com/MicroClub-USTHB/JutsuHandSigns)** · `submodules/jutsu-hand-signs`
 
 </td>
-<td width="33%" valign="top">
+</tr>
+<tr>
+<td width="50%" valign="top">
 
 ### FingerShooter, finger-gun gallery
 
@@ -69,6 +71,20 @@ Aim with your index finger, fire by snapping your thumb.
 - Mouse fallback if the camera is blocked
 
 **[Open the repo](https://github.com/MicroClub-USTHB/FingerShooter)** · [Play live](https://fingershooter.netlify.app/) · `submodules/fingershooter`
+
+</td>
+<td width="50%" valign="top">
+
+### HOCKEY-AR, air hockey for two
+
+Two players, one webcam: your hand is the paddle.
+
+- MediaPipe hand tracking in the browser
+- Fixed-timestep physics, neon table, puck trail
+- Two players or solo against an AI
+- First to 7 wins, plain HTML, CSS and JavaScript
+
+**[Open the repo](https://github.com/MicroClub-USTHB/ar-hockey)** · `submodules/ar-hockey`
 
 </td>
 </tr>
@@ -90,6 +106,9 @@ cd submodules/jutsu-hand-signs && pip install -r requirements.txt && python main
 # FingerShooter (runs in the browser)
 cd submodules/fingershooter && npm install && npm run dev
 
+# HOCKEY-AR (static site, needs http://localhost for the camera)
+cd submodules/ar-hockey && python3 -m http.server 8000
+
 # Mario Kart DS (needs your own legally dumped ROM, see its README)
 cd submodules/mario-cam-kart && ./play.sh      # play.bat on Windows
 ```
@@ -101,6 +120,7 @@ cd submodules/mario-cam-kart && ./play.sh      # play.bat on Windows
 | **Mario Kart DS** | Show both hands to the camera and grab an imaginary wheel. Tilt to steer, fist to accelerate, open palm to brake, thumb out for an item. Or scan the QR code and drive from your phone. |
 | **Jutsu Hand Signs** | Pick a ninja and difficulty. Form each seal shown on screen and hold it. Finish the sequence and your jutsu erupts on your hand. |
 | **FingerShooter** | Allow the camera, hold the aim pose until calibration fills. Point your index finger to aim, cock and snap your thumb to fire. Avoid the firewall viruses. |
+| **HOCKEY-AR** | Pick 2 players or solo vs AI and allow the camera. Show a hand each, one on each half of the picture, and swing into the puck. First to 7 wins. |
 
 ## Built with
 
@@ -110,6 +130,7 @@ cd submodules/mario-cam-kart && ./play.sh      # play.bat on Windows
 | **MediaPipe** | hand tracking and gesture recognition |
 | **Python** | game logic |
 | **Three.js** | the 3D scene of FingerShooter and the Jutsu duel |
+| **HTML canvas** | HOCKEY-AR's table, physics and effects |
 | **melonDS** | the Nintendo DS emulator the kart game is forked from |
 
 ## Contributors
@@ -146,7 +167,7 @@ The people who built these games.
 <td align="center" valign="top" width="16%">
 <a href="https://github.com/leash06"><img src="https://avatars.githubusercontent.com/u/222554346?v=4&s=160" width="88" alt="leash06" /></a><br />
 <a href="https://github.com/leash06"><b>leash06</b></a><br />
-<sub>Motion Games</sub>
+<sub>HOCKEY-AR · Motion Games</sub>
 </td>
 </tr>
 </table>
