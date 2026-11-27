@@ -9,7 +9,7 @@
   <a href="https://github.com/MicroClub-USTHB"><img src="https://img.shields.io/badge/by-Micro%20Club%20USTHB-0b0b10?style=flat" alt="Micro Club USTHB" /></a>
 </p>
 
-<p align="center"><a href="#the-games">Games</a> · <a href="#run-them">Run them</a> · <a href="#how-to-play">How to play</a> · <a href="#built-with">Built with</a></p>
+<p align="center"><a href="#the-games">Games</a> · <a href="#run-them">Run them</a> · <a href="#how-to-play">How to play</a> · <a href="#built-with">Built with</a> · <a href="#contributors">Contributors</a></p>
 
 ---
 
@@ -105,6 +105,45 @@ cd submodules/mario-cam-kart && ./play.sh      # play.bat on Windows
 | **Python** | game logic |
 | **Three.js** | the 3D scene of FingerShooter and the Jutsu duel |
 | **melonDS** | the Nintendo DS emulator the kart game is forked from |
+
+## Contributors
+
+The people who built these games.
+
+<table>
+<tr>
+<td align="center" valign="top" width="16%">
+<a href="https://github.com/wailbentafat"><img src="https://avatars.githubusercontent.com/u/150479778?v=4&s=160" width="88" alt="bentafat wail" /></a><br />
+<a href="https://github.com/wailbentafat"><b>bentafat wail</b></a><br />
+<sub>Mario Kart · Jutsu · FingerShooter</sub>
+</td>
+<td align="center" valign="top" width="16%">
+<a href="https://github.com/nisbenz"><img src="https://avatars.githubusercontent.com/u/191801135?v=4&s=160" width="88" alt="Nisbenz" /></a><br />
+<a href="https://github.com/nisbenz"><b>Nisbenz</b></a><br />
+<sub>Mario Kart · Jutsu</sub>
+</td>
+<td align="center" valign="top" width="16%">
+<a href="https://github.com/Abadli-Badro"><img src="https://avatars.githubusercontent.com/u/78659350?v=4&s=160" width="88" alt="Abadli Badreddine" /></a><br />
+<a href="https://github.com/Abadli-Badro"><b>Abadli Badreddine</b></a><br />
+<sub>FingerShooter</sub>
+</td>
+<td align="center" valign="top" width="16%">
+<a href="https://github.com/trrayane"><img src="https://avatars.githubusercontent.com/u/185417145?v=4&s=160" width="88" alt="tr_rayane" /></a><br />
+<a href="https://github.com/trrayane"><b>tr_rayane</b></a><br />
+<sub>Jutsu</sub>
+</td>
+<td align="center" valign="top" width="16%">
+<a href="https://github.com/MohamedTouaa"><img src="https://avatars.githubusercontent.com/u/121357213?v=4&s=160" width="88" alt="Shiroyasha" /></a><br />
+<a href="https://github.com/MohamedTouaa"><b>Shiroyasha</b></a><br />
+<sub>Jutsu</sub>
+</td>
+<td align="center" valign="top" width="16%">
+<a href="https://github.com/leash06"><img src="https://avatars.githubusercontent.com/u/222554346?v=4&s=160" width="88" alt="leash06" /></a><br />
+<a href="https://github.com/leash06"><b>leash06</b></a><br />
+<sub>Motion Games</sub>
+</td>
+</tr>
+</table>
 
 ## License and legal
 
