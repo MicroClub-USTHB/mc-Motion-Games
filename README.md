@@ -84,7 +84,7 @@ Two players, one webcam: your hand is the paddle.
 - Two players or solo against an AI
 - First to 7 wins, plain HTML, CSS and JavaScript
 
-**[Open the repo](https://github.com/MicroClub-USTHB/ar-hockey)** · `submodules/ar-hockey`
+**[Open the repo](https://github.com/MicroClub-USTHB/ar-hockey)** · `submodules/hockey-ar`
 
 </td>
 </tr>
@@ -107,7 +107,7 @@ cd submodules/jutsu-hand-signs && pip install -r requirements.txt && python main
 cd submodules/fingershooter && npm install && npm run dev
 
 # HOCKEY-AR (static site, needs http://localhost for the camera)
-cd submodules/ar-hockey && python3 -m http.server 8000
+cd submodules/hockey-ar && python3 -m http.server 8000
 
 # Mario Kart DS (needs your own legally dumped ROM, see its README)
 cd submodules/mario-cam-kart && ./play.sh      # play.bat on Windows
