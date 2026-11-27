@@ -7,3 +7,6 @@
 [submodule "submodules/fingershooter"]
 	path = submodules/fingershooter
 	url = https://github.com/MicroClub-USTHB/FingerShooter.git
+[submodule "submodules/ar-hockey"]
+	path = submodules/ar-hockey
+	url = https://github.com/MicroClub-USTHB/ar-hockey.git
